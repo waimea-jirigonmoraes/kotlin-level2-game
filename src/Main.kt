@@ -12,8 +12,13 @@
  */
 
 
-
 fun main() {
-    println("Hello World!")
+    val game = mutableListOf<String>(16)
+
+    println ("┌──────────────────────┐")
+    for ( i in game.indicates) {
+        println("| ${game.padEnd(length = 16)} | ")
+    }
 }
+
 
