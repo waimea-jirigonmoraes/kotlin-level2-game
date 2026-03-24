@@ -12,13 +12,12 @@
  */
 
 
-fun main() {
-    val game = mutableListOf<String>(16)
-
-    println ("┌──────────────────────┐")
-    for ( i in game.indicates) {
-        println("| ${game.padEnd(length = 16)} | ")
+fun showBoard () {
+    println("+--------------------+".red())
+    for (i in 0 until board.size) {
+       val square = "${i + 1 }: ${board[i]}"
+        println (square.padEnd(29))
     }
-}
+
 
 
